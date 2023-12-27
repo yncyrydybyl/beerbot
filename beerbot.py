@@ -6,6 +6,26 @@ import subprocess
 import time
 import requests
 
+
+BEER_ALIASES = [
+  'cervesa',   # catalan
+  'cerveza',   # spanish
+  'bier',   # de_DE
+  'schoppen',   # de_SILLY
+  'hopfenkaltschale', 
+  'erstensaft',
+  'bölkstoff',
+  'molle',
+  'пиво',
+  'piwo',
+  'pivo',
+  'bière',
+  'øl',  # dk & no
+  'olut',   # fi
+  'öl',   # sv
+
+]
+
 class BeerBot(Plugin):
   @command.new()
   async def stalebeer(self, evt: MessageEvent) -> None:
@@ -17,7 +37,7 @@ class BeerBot(Plugin):
 
 
     # os.system("/home/candle/beertap/pour.sh")
-  @command.new()
+  @command.new(aliases=BEER_ALIASES)
   async def beer(self, evt: MessageEvent) -> None:
     url = "http://127.0.0.1:5000/setEmoji"
     data = {"emoji":"🍺"}
