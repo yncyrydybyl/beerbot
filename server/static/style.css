@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Optional: background color */
+    font-family: Arial, sans-serif; /* Optional: font style */
+}
+
+#mainContent {
+    text-align: center;
+}
+
+.qr-code {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+}
+
+.text {
+    font-weight: bold;
+    margin-top: 20px;
+}
