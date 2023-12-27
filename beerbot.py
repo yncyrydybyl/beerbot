@@ -13,7 +13,7 @@ BEER_ALIASES = [
   'bier',   # de_DE
   'schoppen',   # de_SILLY
   'hopfenkaltschale', 
-  'erstensaft',
+  'gerstensaft',
   'bölkstoff',
   'molle',
   'пиво',
