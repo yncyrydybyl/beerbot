@@ -16,7 +16,9 @@ const FAIL_CONTENT = `
 
 const SUCCESS_CONTENT = `
     <div class="container">
-        <div class="text">Success!<br/><br/>Enjoy beer!</div>
+        <div class="text">Success!<br/>Enjoy!<br/>Get the badge:</div>
+        <img src="/static/BadgeToken.svg" alt="Badge QR Code" class="qr-code">
+        <div class="text">im64x9pd0fnqzbu9q1jv</div>
     </div>
 `;
 
