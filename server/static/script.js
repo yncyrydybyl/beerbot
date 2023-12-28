@@ -16,7 +16,7 @@ const FAIL_CONTENT = `
 
 const SUCCESS_CONTENT = `
     <div class="container">
-        <div class="text">Success!<br/>Enjoy!<br/>Get the badge:</div>
+        <div class="text">Success!<br/>Enjoy!<br/>Scan this QR code to get the badge:</div>
         <img src="/static/BadgeToken.svg" alt="Badge QR Code" class="qr-code">
         <div class="text">im64x9pd0fnqzbu9q1jv</div>
     </div>
@@ -140,10 +140,10 @@ async function pourBeer() {
     const grid = document.getElementById('mainContent');
     grid.innerHTML = SUCCESS_CONTENT;
 
-    // Reset back to the home screen after one second.
+    // Reset back to the home screen after pouring
     setTimeout(() => {
         showHome();
-    }, 3000);
+    }, 18000); // = POUR_TIME
 }
 
 function showError() {
@@ -154,5 +154,5 @@ function showError() {
     // Reset back to the home screen after one second.
     setTimeout(() => {
         showHome();
-    }, 1000);
+    }, 3000);
 }
